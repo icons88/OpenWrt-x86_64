@@ -37,5 +37,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # git clone https://github.com/firkerword/luci-app-serverchan.git package/luci-app-serverchan
 # git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/adguardhome
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 # merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
 
