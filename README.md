@@ -1,4 +1,4 @@
-- LEDE源码，内核5.15,(支持ipv6)
+- LEDE源码，内核5.15，(支持ipv6)
 
 - 精简插件：ShadowSocksR Plus+、MosDNS、Turboacc 网络加速
 
