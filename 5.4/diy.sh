@@ -28,10 +28,10 @@ git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # smartdns
-# git clone https://github.com/firkerword/luci-app-smartdns.git package/luci-app-smartdns
-# git clone https://github.com/firkerword/smartdns.git package/smartdns
+git clone https://github.com/firkerword/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/firkerword/smartdns.git package/smartdns
 
 # adguardhome
-# git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 
 
