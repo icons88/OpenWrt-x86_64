@@ -143,7 +143,7 @@ jobs:
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "默认地址：10.1.1.1" >> release.txt
+        echo "默认地址：192.168.2.1" >> release.txt
         echo "默认密码：无密码" >> release.txt
         echo "插件包含：ShadowSocksR Plus+,MosDNS,Turbo ACC" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
