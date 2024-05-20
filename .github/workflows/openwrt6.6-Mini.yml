@@ -167,12 +167,13 @@ jobs:
       id: release
       uses: ncipollo/release-action@v1
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         name: ${{ env.FILE_TIME }} 「 openwrt-6.6-精简版 」
         allowUpdates: true
         tag: ${{ env.TAG_TIME }}
         commit: main
-        token: ${{ secrets.RELEASE_TOKEN }}
         body: |
           默认地址：192.168.2.1
           默认密码：无密码
@@ -193,4 +194,4 @@ jobs:
         keep_latest: 9
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
