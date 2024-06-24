@@ -26,8 +26,9 @@ git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
 # git clone https://github.com/gngpp/luci-theme-neobird.git package/luci-theme-neobird
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+
 git clone https://github.com/firkerword/luci-app-smartdns.git package/luci-app-smartdns
 git clone https://github.com/firkerword/smartdns.git package/smartdns
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
