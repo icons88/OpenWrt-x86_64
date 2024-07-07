@@ -173,7 +173,7 @@ jobs:
         
     - name: 发布至release
       id: release
-      uses: ncipollo/release-action@v1
+      uses: softprops/action-gh-release@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
