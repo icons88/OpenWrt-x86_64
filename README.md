@@ -6,5 +6,5 @@
 
 - 默认地址：192.168.2.1 默认密码: 无密码
 
-## [固件下载](https://github.com/icons88/OpenWrt-k5.15/releases)
-## [历史固件](https://github.com/icons88/OpenWrt-k5.15/actions)
+## [固件下载](https://github.com/icons88/OpenWrt-x86_64/releases)
+## [历史固件](https://github.com/icons88/OpenWrt-x86_64/actions)
