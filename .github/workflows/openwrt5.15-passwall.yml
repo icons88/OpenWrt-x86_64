@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt-lede5.15-标准版
+name: OpenWrt-lede5.15-passwall
 
 on:
   repository_dispatch:
@@ -168,7 +168,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt-5.15-Stable${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: OpenWrt-5.15-passwall${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
         
     - name: 发布至release
@@ -178,14 +178,14 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
-        name: ${{ env.FILE_TIME }} 「 openwrt-5.15-标准版 」
+        name: ${{ env.FILE_TIME }} openwrt-5.15-passwall
         allowUpdates: true
         tag: ${{ env.TAG_TIME }}
         commit: main
         body: |
           默认地址：192.168.2.1
           默认密码：无密码
-          插件包含：PassWall, SmartDNS, adguardhome, UU游戏加速, Turbo ACC网络加速
+          插件包含：PassWall、SmartDNS、adguardhome、Turbo ACC网络加速
         artifacts: ${{ env.FIRMWARE }}/*
 
     - name: 清理旧的workflow
