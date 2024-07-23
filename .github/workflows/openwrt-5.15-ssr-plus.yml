@@ -185,7 +185,7 @@ jobs:
         body: |
           默认地址：192.168.2.1
           默认密码：无密码
-          插件包含：ShadowSocksR Plus+,MosDNS,Turbo ACC
+          插件包含：ShadowSocksR Plus+、MosDNS、Turbo ACC
         artifacts: ${{ env.FIRMWARE }}/*
 
     - name: 清理旧的workflow
