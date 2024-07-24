@@ -2,7 +2,7 @@
 
 - 精简插件：ShadowSocksR Plus+、MosDNS、Turboacc 网络加速
 
-- 标准插件：PassWall、adguardhome、SmartDNS、UU 游戏加速、Turboacc 网络加速
+- 标准插件：PassWall、adguardhome、SmartDNS、Turboacc 网络加速
 
 - 默认地址：192.168.2.1 默认密码: 无密码
 
