@@ -16,9 +16,12 @@ function drop_package(){
 
 rm -rf package/custom; mkdir package/custom
 
-git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
+sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 
-git clone https://github.com/fw876/helloworld.git package/ssr
+#git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
+
+# git clone https://github.com/fw876/helloworld.git package/ssr
 
 # git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
