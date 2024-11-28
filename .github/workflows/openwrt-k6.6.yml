@@ -151,9 +151,9 @@ jobs:
         echo "release_tag=${{ env.TAG_TIME }}" >> $GITHUB_OUTPUT
         touch release.txt
         echo "OpenWrt-x86_64-内核6.6（支持ipv6）" >> release.txt
-        echo "默认地址：192.168.1.1" >> release.txt
-        echo "默认密码：无密码" >> release.txt
-        echo "包含插件：PassWall、ShadowSocksR Plus+、MosDNS、SmartDNS、adguardhome、UUGame、Turbo ACC" >> release.txt
+        echo "地址：192.168.1.1" >> release.txt
+        echo "密码：无密码" >> release.txt
+        echo "插件：PassWall、ShadowSocksR Plus+、MosDNS、SmartDNS、adguardhome、UUGame、Turbo ACC" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: 发布新版固件
