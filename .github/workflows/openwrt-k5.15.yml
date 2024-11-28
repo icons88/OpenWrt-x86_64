@@ -9,7 +9,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: 5.15/ok2.config
+  CONFIG_FILE: 5.15/ok.config
   DIY_P1_SH: 5.15/diy-1.sh
   DIY_P2_SH: 5.15/diy-2.sh
   UPLOAD_FIRMWARE: true
