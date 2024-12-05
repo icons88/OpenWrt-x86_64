@@ -1,4 +1,4 @@
-name:  MinGwrt-k6.12
+name:  MinGwrt-6.12
 
 on: 
   workflow_dispatch:
@@ -150,9 +150,9 @@ jobs:
       run: |
         echo "release_tag=${{ env.TAG_TIME }}" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "MinGwrt-x86_64-6.12（ipv6）" >> release.txt
-        echo "IP：192.168.1.1" >> release.txt
-        echo "PassWD：无密码" >> release.txt
+        echo "MinGwrt-6.12" >> release.txt
+        echo "IP：100.1.1.1" >> release.txt
+        echo "PassWD： " >> release.txt
         echo "app：PassWall、SmartDNS、adguardhome、UUGame、Turbo ACC" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
@@ -162,7 +162,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
-        name: ${{ env.FILE_TIME }} 内核6.12版
+        name: ${{ env.FILE_TIME }} k6.12
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/* 
