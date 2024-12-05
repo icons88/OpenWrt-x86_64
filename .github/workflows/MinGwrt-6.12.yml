@@ -11,7 +11,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 6.1/ok-2.config
   DIY_P1_SH: 6.1/diy-1.sh
-  DIY_P2_SH: 6.1/diy-2.sh
+  DIY_P2_SH: 6.1/diy-MG.sh
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
