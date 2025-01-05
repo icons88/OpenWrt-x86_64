@@ -1,9 +1,9 @@
-name:  MinGwrt-6.6
+name:  OpenWrt-6.6
 
 on: 
-  # workflow_dispatch:
-  # schedule:
-    # - cron: 30 00 * * 5
+  workflow_dispatch:
+  schedule:
+    - cron: 30 00 * * 2
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
