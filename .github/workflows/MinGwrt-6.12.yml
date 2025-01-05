@@ -1,9 +1,9 @@
 name:  MinGwrt-6.12
 
 on: 
-  workflow_dispatch:
-  schedule:
-    - cron: 29 00 * * 5
+  # workflow_dispatch:
+  # schedule:
+    # - cron: 29 00 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
