@@ -141,7 +141,7 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt-x86_64-k6.1${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: OpenWrt-x86_64-k6.12${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: 创建发布标签
