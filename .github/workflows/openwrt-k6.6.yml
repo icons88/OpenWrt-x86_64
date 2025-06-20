@@ -3,7 +3,7 @@ name:  OpenWrt-x86_64-k6.6
 on: 
   workflow_dispatch:
   schedule:
-    - cron: 30 00 * * 5
+  #  - cron: 30 00 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
