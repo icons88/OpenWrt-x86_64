@@ -2,7 +2,7 @@ name:  OpenWrt-x86_64-k6.1
 
 on: 
   workflow_dispatch:
-  schedule:
+  #schedule:
   #  - cron: 29 00 * * 5
 
 env:
