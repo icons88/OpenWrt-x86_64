@@ -2,7 +2,7 @@ name:  OpenWrt-x86_64-k5.15
 
 on: 
   workflow_dispatch:
-  schedule:
+  #schedule:
   #  - cron: 20 00 * * 5
 
 env:
